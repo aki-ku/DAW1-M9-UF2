@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="act1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="https://aki-ku.github.io/DAW1-M9-UF2/">Home</a>
+            <a href="https://aki-ku.github.io/DAW1-M9-UF2/">Exercicis</a>
+            <a href="#">Projecte</a>
+            <a href="about.html">About</a>
+        </div>
+        <h1>DAW1-Homepage</h1>
+        <h2>UF2</h2>
+    </header>
+
+    <div class="img-principal">
+        <img class="myImg" src="img_conan/conan0.jpg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan1.jpg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan2.png" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan3.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan4.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan5.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan6.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan7.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan8.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_conan/conan9.jpg" style="max-width:300px">
+
+        <img class="myImg" src="img_kid/kid0.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid1.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid2.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid3.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid4.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid5.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid6.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid7.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid8.jpeg" style="max-width:300px">
+        <img class="myImg" src="img_kid/kid9.jpeg" style="max-width:300px">
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    <script>
+
+        const images = document.querySelectorAll(".myImg");
+
+        images.forEach(Element => {
+            Element.addEventListener('click', function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            )
+        })
+
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close");
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
