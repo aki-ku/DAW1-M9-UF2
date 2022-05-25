@@ -1,0 +1,83 @@
+a {
+    text-decoration: none;
+    font-style: inherit;
+    color: black;
+}
+
+
+header,
+footer {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.links a {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.links a:hover,
+.links a:focus {
+    background-color: rgb(172, 172, 172);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+header h1 {
+    text-align: right;
+    margin-top: -80px;
+    margin-right: 1rem;
+}
+
+header h2 {
+    text-align: right;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+*{
+    margin: 0;
+}
+.left{
+    position: absolute;
+    top: 100px;
+    left: 0px; 
+    max-width: 500px;
+}
+img{
+    max-width: 2000px;
+}
+.im{
+    position: absolute;
+    max-width: 500px;
+    top:100px;
+    right: 0px;
+}
+
+.a1{
+    position: absolute;
+    top: 300px;
+    right: 750px;
+}
+
+.a2{
+    position: absolute;
+    top: 360px;
+    right: 750px;
+}
+
+.a3{
+    position: absolute;
+    top: 420px;
+    right: 750px;
+}
+
+.a4{
+    position: absolute;
+    top: 480px;
+    right: 750px;
+}
